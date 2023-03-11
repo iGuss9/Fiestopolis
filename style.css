@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Open+Sans:300,400');
+
+body, html {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 0.5rem;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+a {
+  color:#5bc0de;
+}
+
+a:hover {
+  color: #31b0d5;
+  text-decoration: none;
+}
+
+#hm {
+  min-height: 100%;
+}
+
+.heading {
+  color: #FFF;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+}
+
+.middle {
+  color: #FFF;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  width: 100%;
+}
+
+.bg-img1 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://scontent.fvsa2-1.fna.fbcdn.net/v/t1.6435-9/47580394_952822654908140_4905456339750223872_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=Vrj8qetFjmQAX_1wCu8&_nc_ht=scontent.fvsa2-1.fna&oh=00_AfDARab7-7ZfoHtUJDW0lB8C_Q9ACIYG4z60zwRuIVlqrg&oe=6433960D');
+}
+
+.bg-img2 {
+  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://th.bing.com/th/id/R.aa8a4155de410adacc63902ce9610f7a?rik=3hxKhIovS6hguA&pid=ImgRaw&r=0');
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 850px;
+}
+
+.card {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {background-attachment: scroll;}
+  .heading {top: 30%;} 
+  .middle {top: 15%;}
+}
