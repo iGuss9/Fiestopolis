@@ -88,32 +88,35 @@ a:hover {
   .heading {top: 30%;} 
   .middle {top: 15%;}
 }
-
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
-* {
-	box-sizing: border-box;
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
 }
 
-body {
-	background-color: #192a56;
-	color: #fff;
-	font-family: 'Muli', sans-serif;
-	flex-direction: column;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	margin: 0;
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
 }
 
-h1 {
-	font-size: 50px;
-	margin: 0;
+.slider .slide {
+    width: 200px;
 }
 
-p {
-	color: rgba(255, 255, 255, 0.8);
-	letter-spacing: 2px;
-	margin: 0;
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
 }
